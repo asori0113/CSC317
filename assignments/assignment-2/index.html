@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    <!--Head Settings-->
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Personal portfolio of Aljhay Soriano">
         <meta name="keywords" content="portfolio, web developement"> 
         <title>Aljhay Soriano - Portfolio</title>
+        <link rel="icon" type="image/icon" href="/images/icon.jpeg">
     </head>
+
     <body>
         <!--Audio-->
-        <section>
-            <audio controls>
-                <source src="images/music.mp3" type="audio/mpeg">
+        <div>
+            <audio controls id="audio">
+                <source src="music.mp3" type="audio/mpeg">
             </audio>
-        </section>
+        </div>
         
-
-        <header>
+        <!--Header-->
+        <header id="front">
             <h1>My Portfolio - Aljhay Soriano</h1>
         </header>
 
         <!--Contact Information-->
-        <section>
-            <h3>--Contact information--</h3>
-            <p>Email: aljhayjhass@outlook.com ------- Phone Number: (650)201-****</p>
+        <section id="contactinformation">
+            <h3>--Contact information--</h3>           
+            <footer>
+                <p>Email: aljhayjhass@outlook.com ------- Phone Number: (650)201-****</p>
+            </footer>
         </section>
 
         <!--About Me w/ images-->
@@ -45,7 +52,18 @@
             </article>
         </section>
         <br>
+
+        <!--ExtraCurricular Section-->
+        <section>   
+            <h3 id="extracurricular">--ExtraCurricular--</h3>
+            <ul>
+                <li>Rock climbing</li>
+                <li>Hiking</li>
+            </ul>
+        </section>
+        <br>
         
+        <!--Main Content-->
         <main>
             <!--Hyperlink to different media profiles-->
             <section>
@@ -92,7 +110,7 @@
             <section>
                 <h3 id="experience">--Experience--</h3>
 
-                <!--Ordered List for work histpory and table within it for job information-->
+                <!--Ordered List for work history and table within it for job information-->
                 <ol>
                     <li>
                         <h4>Teaspoon:</h4>
@@ -130,17 +148,9 @@
             </section>
             <br>
 
-            <!--ExtraCurricular Section-->
-            <section>   
-                    <h3 id="extracurricular">--ExtraCurricular--</h3>
-                    <ul>
-                        <li>Rock climbing</li>
-                        <li>Hiking</li>
-                    </ul>
-            </section>
-            <br>
 
-            <!--Main Content: Projects Section-->
+
+            <!--Projects Section-->
             <section>
                     <h3 id="projects">--Projects--</h3>
                     <article>
@@ -186,6 +196,9 @@
         <section>
             <h3>Reference:</h3>
             <ol>
+                <li><a href="#audio">--Audio--</a></li>
+                <li><a href="#front">--Top Page--</a></li>
+                <li><a href="#contactinformation">--Contact Information--</a></li>
                 <li><a href="#profilelinks">--Profile Link--</a></li>
                 <li><a href="#bio">--Bio--</a></li>
                 <li><a href="#education">--Education--</a></li>
