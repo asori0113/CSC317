@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.heading {
+    background-color: rgb(120, 147, 152);
+    padding: 25px;
+    position: static;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    z-index: 100;
+
+}
+
+.heading .title {
+    color: rgb(0, 0, 0);
+
+}
+
+.heading .nav-links  {
+    display: flex;
+    gap: 20px;
+
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
