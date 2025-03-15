@@ -14,38 +14,33 @@
 
     <body>
 
-         <!--Top Box Header and right flex-->
+         <!--Top Box Header, Audio and right flex-->
         <Section class="heading">
             <div>
-                <header id="front" class="title">
+                <header id="front">
                     <h1>My Portfolio - Aljhay Soriano</h1>
                 </header>
             </div>
             
             <div>
+                <audio controls id="audio">
+                    <source src="music.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div>
                 <nav class="nav-links">
                     <a href="#education">Education</a>
                     <a href="#experience">Experience</a>
                     <a href="#projects">Projects</a>
-                    <nav class="contact">
-                        <a href="#contact" >Contact Form</a>
-                    </nav>
+                    <div class="contact">
+                        <a href="#contact">Contact Form</a>
+                    </div>
   
                 </nav>  
     
         </Section>
         
-
-        <!--Audio-->
-        <div>
-            <audio controls id="audio">
-                <source src="music.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-        
-       
-        
-
         <!--Contact Information-->
         <section id="contactinformation">
             <h3>--Contact information--</h3>           
@@ -57,11 +52,15 @@
         <!--About Me w/ images-->
         <section>
             <h2 id="aboutme">--About Me--</h2>
-            <h3>School Name: SFSU (San Francisco State University)</h3>
-            <img src="images/SFSULogo.jpeg" alt="SFSU Logo" width="300" height="400">
-            <h3>Hometown: Daly City, Ca.</h3>
-            <img src="images/DalyCity.jpeg" alt="Hometown" width="300" height="400">
-
+            <div class="aboutmeh3", class="aboutme">
+                <h3>Hometown: Daly City, Ca.</h3>
+                <h3>School Name: SFSU (San Francisco State University)</h3>
+            </div>
+            <div class="aboutme">
+                <img src="images/SFSULogo.jpeg" alt="SFSU Logo" width="300" height="400">
+                <img src="images/DalyCity.jpeg" alt="Hometown" width="300" height="400">    
+            </div>
+            
             <!--Bio-->
             <article>
                 <h3 id="bio">--Biography--</h3>
@@ -90,7 +89,7 @@
             <!--Hyperlink to different media profiles-->
             <section>
                 <h3 id="profilelinks">--Profile Links--</h3>
-                <nav>
+                <nav class="profile-links">
                     <ul>
                         <li><a href="https://github.com/asori0113">Github</a></li>
                         <li><a href="https://leetcode.com/u/aljhayjhassoriano/">Leetcode Profile</a></li>
