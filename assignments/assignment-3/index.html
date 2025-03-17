@@ -9,12 +9,64 @@
         <meta name="keywords" content="portfolio, web developement"> 
         <title>Aljhay Soriano - Portfolio</title>
         <link rel="icon" type="image/icon" href="/images/icon.jpeg">
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="styles/min.css" id="css-theme">
+        <style>
+            /* Theme Switcher Styling */
+            .theme-switcher {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+                padding: 12px;
+                z-index: 1000;
+            }
+    
+            .theme-switcher h3 {
+                margin-top: 0;
+                margin-bottom: 10px;
+                font-size: 16px;
+                text-align: center;
+            }
+    
+            .theme-buttons {
+                display: flex;
+                gap: 8px;
+            }
+    
+            .theme-button {
+                padding: 8px 12px;
+                background-color: #f0f0f0;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 14px;
+                transition: all 0.2s ease;
+            }
+    
+            .theme-button:hover {
+                background-color: #e0e0e0;
+            }
+    
+            .theme-button.active {
+                background-color: #007bff;
+                color: white;
+                border-color: #0069d9;
+            }
+        </style>
+
+
     </head>
+
+    <!--Audio-->
+    <audio controls id="audio" autoplay>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
 
     <body>
 
-         <!--Top Box Header, Audio and right flex-->
+         <!--Top Box Header navigation, contact information and right flex-->
         <Section class="heading">
             <div>
                 <header id="front">
@@ -23,9 +75,11 @@
             </div>
             
             <div>
-                <audio controls id="audio">
-                    <source src="music.mp3" type="audio/mpeg">
-                </audio>
+                <h3 id="contactinformation">--Contact information--</h3>           
+                <footer>
+                    <p>Email: aljhayjhass@outlook.com ------- Phone Number: (650)201-****</p>
+                </footer>
+                
             </div>
 
             <div>
@@ -40,18 +94,11 @@
                 </nav>  
     
         </Section>
-        
-        <!--Contact Information-->
-        <section id="contactinformation">
-            <h3>--Contact information--</h3>           
-            <footer>
-                <p>Email: aljhayjhass@outlook.com ------- Phone Number: (650)201-****</p>
-            </footer>
-        </section>
+    
 
         <!--About Me w/ images-->
         <section>
-            <h2 id="aboutme">--About Me--</h2>
+            <h2 id="aboutme" class="center">--About Me--</h2>
             <div class="aboutmeh3", class="aboutme">
                 <h3>Hometown: Daly City, Ca.</h3>
                 <h3>School Name: SFSU (San Francisco State University)</h3>
@@ -76,7 +123,7 @@
 
         <!--ExtraCurricular Section-->
         <section>   
-            <h3 id="extracurricular">--ExtraCurricular--</h3>
+            <h3 id="extracurricular" class="center">--ExtraCurricular--</h3>
             <ul>
                 <li>Rock climbing</li>
                 <li>Hiking</li>
@@ -88,7 +135,7 @@
         <main>
             <!--Hyperlink to different media profiles-->
             <section>
-                <h3 id="profilelinks">--Profile Links--</h3>
+                <h3 id="profilelinks" class="center">--Profile Links--</h3>
                 <nav class="profile-links">
                     <ul>
                         <li><a href="https://github.com/asori0113">Github</a></li>
@@ -103,7 +150,7 @@
 
             <!--Education Section-->
             <section>
-                <h3 id="education">--Education--</h3>
+                <h3 id="education" class="center">--Education--</h3>
 
                 <!--Degrees/Certification with unordered list-->
                     <h4>Degrees/Certifcations:</h4>
@@ -129,7 +176,7 @@
 
             <!--Experience Section-->
             <section>
-                <h3 id="experience">--Experience--</h3>
+                <h3 id="experience" class="center">--Experience--</h3>
 
                 <!--Ordered List for work history and table within it for job information-->
                 <ol>
@@ -173,16 +220,19 @@
 
             <!--Projects Section-->
             <section>
-                    <h3 id="projects">--Projects--</h3>
-                    <article>
-                        <h4>HTML PORTFOLIO WEBSITE</h4>
-                        <p>Website created for personal website using CSS, HTML and JavaScript</p>
-                    </article>
-    
-                    <article>
-                        <h4>AR REALITY USING OPENCV</h4>
-                        <p>Uses homography for a 2D scan of a surface which then processes exclusive features of scan and creates a 3D image above it</p>
-                    </article>
+                
+                    <h3 id="projects" class="center">--Projects--</h3>
+                    <div class="project-grid">
+                        <article class="project-card">
+                            <h4>HTML PORTFOLIO WEBSITE</h4>
+                            <p>Website created for personal website using CSS, HTML and JavaScript</p>
+                        </article>
+        
+                        <article class="project-card">
+                            <h4>AR REALITY USING OPENCV</h4>
+                            <p>Uses homography for a 2D scan of a surface which then processes exclusive features of scan and creates a 3D image above it</p>
+                        </article>
+                    </div>
             </section> 
             <br>
         </main>
@@ -215,8 +265,10 @@
 
         <!--Reference Section-->
         <section>
+            
             <h3>Reference:</h3>
-            <ol>
+            
+            <ol class="reference">
                 <li><a href="#audio">--Audio--</a></li>
                 <li><a href="#front">--Top Page--</a></li>
                 <li><a href="#contactinformation">--Contact Information--</a></li>
@@ -229,5 +281,58 @@
                 <li><a href="#contact" class="contact">--Contact Form--</a></li>
             </ol>
         </section>
+
+        <!-- Theme Switcher -->
+        <div class="theme-switcher">
+            <h3>Theme Switcher</h3>
+            <div class="theme-buttons">
+                <button class="theme-button active" data-theme="styles">Hand-Written</button>
+                <button class="theme-button" data-theme="ai-1">AI 1</button>
+                <button class="theme-button" data-theme="ai-2">AI 2</button>
+                <button class="theme-button" data-theme="hybrid">Hybrid</button>
+            </div>
+        </div>
+                <!-- Theme Switcher Script -->
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Get all theme buttons
+                const themeButtons = document.querySelectorAll('.theme-button');
+                // Get the stylesheet link element
+                const themeStylesheet = document.getElementById('css-theme');
+
+                // Function to set active theme
+                function setActiveTheme(themeName) {
+                    // Update stylesheet href
+                    themeStylesheet.href = `styles/${themeName}.css`;
+
+                    // Update active button state
+                    themeButtons.forEach(button => {
+                        if (button.dataset.theme === themeName) {
+                            button.classList.add('active');
+                        } else {
+                            button.classList.remove('active');
+                        }
+                    });
+
+                    // Save preference to localStorage
+                    localStorage.setItem('preferredTheme', themeName);
+                }
+
+                // Add click event to all theme buttons
+                themeButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        const themeName = this.dataset.theme;
+                        setActiveTheme(themeName);
+                    });
+                });
+
+                // Check if there's a saved theme preference
+                const savedTheme = localStorage.getItem('preferredTheme');
+                if (savedTheme) {
+                    setActiveTheme(savedTheme);
+                }
+            });
+        </script>
     </body>
 </html>
