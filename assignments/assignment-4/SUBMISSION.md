@@ -3,15 +3,21 @@
 **Name:** Aljhay Soriano  
 **Student ID:** 920642161
 **GitHub Username:** asori0113  
-**Assignment Number:** 3
+**Assignment Number:** 4
 
 # Portfolio Styling Assignment Analysis
 
+## Website directories
+
+calculator: https://asori0113.github.io/CSC317/assignments/assignment-4/calculator.html
+
+portolio: 
+
 ## Analysis
-I had a few different approaches, I feel like my problem was impleneting it within my own style sheet. I'm also not that creative with how I'd like to do it. Most of the time my appraoches were not within what I could do as well. I did not finish due to other classes, but I learned a good ammount. I probably will work on it more on my own. I just didn't have enough time due to midterms rolling in.
+I honestly saw the calculator posted and was just adding onto that, I just wrote the code and copy and pasted so I could remember most of the content. From my analysis on the code that was given I saw the scriptings of adding values and calculating scripts on calculator.js which helped a lot. I also saw the grid format he used and structure that was used using a submit form. The submit form was linked with the calculator.js which allowed for display and calculations. The thing that I really needed to improve was just my directory towards my calculator in my portfolio
 
 ## Lessons Learned
-I learned how to use a few things like coloring flexing, grid templates as well as calculations with set variables. I also learned a few spacing stuff such as padding. Also learned how to create hover effects. Learned how to change fonts as well as space text as well
+Use of node.js, and scripting. I also learned more in depth about grid templates.
 
 ## Preferred Version
-I prefer ai version 1, but I understand why it is preffered to learn from a person. there is only soo much specificality an ai can do when creating a website, and it's of best use to use what youy know and to add from ai when you don't know. 
+My preffered would be the ai2 mostly because the animations behind it feels like an upgraded version of the regular calculator

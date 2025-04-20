@@ -129,5 +129,5 @@ a:hover {
 .reference {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
+    align-content: space-arounds;
 }

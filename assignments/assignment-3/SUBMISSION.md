@@ -14,4 +14,4 @@ I had a few different approaches, I feel like my problem was impleneting it with
 I learned how to use a few things like coloring flexing, grid templates as well as calculations with set variables. I also learned a few spacing stuff such as padding. Also learned how to create hover effects. Learned how to change fonts as well as space text as well
 
 ## Preferred Version
-I prefer ai version 3, nut I understand why it is preffered to learn from a person. there is only soo much specificality an ai can do when creating a website, and it's of best use to use what youy know and to add from ai when you don't know.
+I prefer ai version 1, but I understand why it is preffered to learn from a person. there is only soo much specificality an ai can do when creating a website, and it's of best use to use what youy know and to add from ai when you don't know. 
