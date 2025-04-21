@@ -5,16 +5,16 @@
 **GitHub Username:** asori0113  
 **Assignment Number:** 4
 
-# Portfolio Styling Assignment Analysis
-
 ## Website directories
 
 calculator: https://asori0113.github.io/CSC317/assignments/assignment-4/calculator.html
 
-portolio: 
+portolio: https://asori0113.github.io/CSC317/assignments/assignment-4/portfolio.html
+
+hello javascript: https://asori0113.github.io/CSC317/assignments/assignment-4/index.html
 
 ## Analysis
-I honestly saw the calculator posted and was just adding onto that, I just wrote the code and copy and pasted so I could remember most of the content. From my analysis on the code that was given I saw the scriptings of adding values and calculating scripts on calculator.js which helped a lot. I also saw the grid format he used and structure that was used using a submit form. The submit form was linked with the calculator.js which allowed for display and calculations. The thing that I really needed to improve was just my directory towards my calculator in my portfolio
+I honestly saw the calculator posted and was just adding onto that, I just wrote the code down up and copy and pasted so I could remember most of the content. From my analysis on the code that was given I saw the scriptings of adding values and calculating scripts on calculator.js which helped a lot. I also saw the grid format he used and structure that was used using a submit form. The submit form was linked with the calculator.js which allowed for display and calculations. The thing that I really needed to improve was just my directory towards my calculator in my portfolio
 
 ## Lessons Learned
 Use of node.js, and scripting. I also learned more in depth about grid templates.

@@ -8,6 +8,12 @@ body {
     background-color: black;
     color: white;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 #calculator {
     margin: auto;
     display: grid;

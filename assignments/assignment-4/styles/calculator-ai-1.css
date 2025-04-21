@@ -10,6 +10,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 #calculator {
     margin: 4rem auto;
     display: grid;
