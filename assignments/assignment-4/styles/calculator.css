@@ -64,6 +64,10 @@ input[type="button"] {
     background-color: gray;
 }
 
+.memory {
+    background-color: slategrey;
+}
+
 .number:active, .number.pressed  {
     background-color: lightgray;
 }
@@ -74,4 +78,8 @@ input[type="button"] {
 
 .special_fn:active, .special_fn.pressed {
     background-color: lightgray;
+}
+
+.memory:active, .memory.pressed {
+    background-color: gray;
 }

@@ -12,6 +12,27 @@ function ac() {
   $("display").value = "";
 }
 
+let memory = 0;
+
+function addMemory() {
+  const display = $("display");
+  memory += secureEval(display.value || "0");
+}
+
+function subtractMemory() {
+  const display = $("display");
+  memory -= secureEval(display.value || "0");
+}
+
+function recallMemory() {
+  const display = $("display");
+  display.value = memory;
+}
+
+function clearMemory() {
+  memory = 0;
+}
+
 function flipSign() {
   const display = $("display")
   display.value = secureEval(display.value) * -1;
@@ -33,7 +54,6 @@ function calculate() {
 }
 
 function secureEval(expression) {
-  // Only allow numbers, operators, parentheses, and decimal points
   const safePattern = /^[0-9+\-*/%.() ]+$/;
 
   if (!safePattern.test(expression)) {
@@ -55,7 +75,7 @@ function flashButton(id) {
   button.classList.add("pressed");
   setTimeout(() => {
     button.classList.remove("pressed");
-  }, 100); // Adjust for visual feel
+  }, 100);
 }
 
 document.addEventListener("keydown", function(event) {
@@ -78,13 +98,24 @@ document.addEventListener("keydown", function(event) {
     "/": "divide",
     "%": "percent",
     ".": "dot",
+    "M+": "add_memory",
+    "M-": "subtact_memory",
+    "MR": "recall_memory",
+    "CM": "clear_memory",
     "Enter": "equal",
     "Escape": "all_clear",
   };
 
-  // Perform calculator logic
   if ("0123456789+-*/.%".includes(key)) {
     addValue(key);
+  } else if (key === "M+") {
+    addMemory();
+  } else if (key === "M-") {
+    subtractMemory();
+  } else if (key === "MR") {
+    recallMemory();
+  } else if (key === "MC") {
+    clearMemory();
   } else if (key === "Enter") {
     event.preventDefault();
     calculate();
@@ -95,7 +126,6 @@ document.addEventListener("keydown", function(event) {
     display.value = display.value.slice(0, -1);
   }
 
-  // Apply visual feedback
   const btnId = keyMap[key];
   if (btnId) {
     flashButton(btnId);

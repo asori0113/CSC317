@@ -68,6 +68,12 @@
         <form id="calculator" name="calculator">
             <input type="text" name="calculation" id="calculation" disabled>
             <input type="text" name="display" id="display" disabled>
+
+            <input type="button" value="M+" onclick="addMemory()" id="add_memory" class="memory">
+            <input type="button" value="M-" onclick="subtractMemory()" id="subtract_memory" class="memory">
+            <input type="button" value="MR" onclick="recallMemory()" id="recall_memory" class="memory">
+            <input type="button" value="MC" onclick="clearMemory()" id="clear_memory" class="memory">
+
             <input type="button" value="AC" onclick="ac()" id="all_clear" class="special_fn">
             <input type="button" value="+/-" onclick="flipSign()" id="sign"  class="special_fn">
             <input type="button" value="%" onclick="percentage()" id="percent" class="special_fn">
