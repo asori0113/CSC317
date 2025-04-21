@@ -8,29 +8,41 @@ function addValue(value) {
 }
 
 function ac() {
+  $("indicator").value = ""
   $("calculation").value = "";
   $("display").value = "";
+  updateMemoryIndicator();
 }
 
 let memory = 0;
 
+function updateMemoryIndicator() {
+  const indicator = $("indicator");
+  indicator.value = memory !== 0 ? "M" : "";
+}
+
 function addMemory() {
   const display = $("display");
   memory += secureEval(display.value || "0");
+  updateMemoryIndicator();
 }
 
 function subtractMemory() {
   const display = $("display");
   memory -= secureEval(display.value || "0");
+  updateMemoryIndicator();
+  
 }
 
 function recallMemory() {
   const display = $("display");
   display.value = memory;
+  updateMemoryIndicator();
 }
 
 function clearMemory() {
   memory = 0;
+  updateMemoryIndicator();
 }
 
 function flipSign() {

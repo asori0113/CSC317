@@ -22,6 +22,16 @@ a {
     max-width: 390px;
 }
 
+#indicator {
+    height: 5rem;
+    grid-column: span 4;
+    text-align: right;
+    font-size: 18px;
+    color: lightgray;
+    background-color: black;
+    border-width: 0;
+}
+
 #calculation {
     height: 5rem;
     grid-column: span 4;
