@@ -7,11 +7,11 @@
 
 ## Website directories
 
-calculator: https://asori0113.github.io/CSC317/assignments/assignment-4/calculator.html
+calculator: https://asori0113.github.io/CSC317/assignments/assignment-5/calculator.html
 
-portolio: https://asori0113.github.io/CSC317/assignments/assignment-4/portfolio.html
+portolio: https://asori0113.github.io/CSC317/assignments/assignment-5/portfolio.html
 
-hello javascript: https://asori0113.github.io/CSC317/assignments/assignment-4/index.html
+hello javascript: https://asori0113.github.io/CSC317/assignments/assignment-5/index.html
 
 Pinterest Website: https://csc317-group-l.onrender.com/
 
