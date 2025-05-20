@@ -1,0 +1,172 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000010;
+    color: #00f7ff;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    min-height: 100vh;
+    animation: bgPulse 10s infinite alternate;
+}
+
+/* Neon Background Pulse Animation */
+@keyframes bgPulse {
+    0% { background-color: #000010; }
+    100% { background-color: #020024; }
+}
+
+/* Back Link */
+a {
+    text-decoration: none;
+    color: #00f7ff;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #00ffe0;
+}
+
+/* Calculator Grid */
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    max-width: 400px;
+    background: rgba(0, 0, 20, 0.9);
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00f7ff88, 0 0 40px #00f7ff33;
+}
+
+/* Display Fields */
+#indicator,
+#calculation,
+#display {
+    grid-column: span 4;
+    text-align: right;
+    border: none;
+    background-color: transparent;
+    padding: 0.6rem 1rem;
+    font-size: 1.5rem;
+    color: #7fffd4;
+    outline: none;
+    text-shadow: 0 0 5px #00f7ff;
+}
+
+#display {
+    font-size: 2.6rem;
+    color: #00ffe5;
+}
+
+/* Glowing Buttons */
+input[type="button"] {
+    width: 100%;
+    height: 5rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    background: #1c1f2e;
+    box-shadow: 0 0 10px #00f7ff88, inset 0 0 8px #00ffe088;
+    animation: neonPulse 3s infinite alternate;
+}
+
+/* Custom button styles */
+.number {
+    background: #282c34;
+    box-shadow: 0 0 10px #00f7ff66, inset 0 0 5px #00f7ff44;
+}
+.operator {
+    background: #ff0099;
+    box-shadow: 0 0 15px #ff00ff88, inset 0 0 8px #ff00ff66;
+}
+.special_fn {
+    background: #00ffa2;
+    box-shadow: 0 0 15px #00ffcc99, inset 0 0 10px #00ffaa66;
+}
+.memory {
+    background: #005eff;
+    box-shadow: 0 0 15px #00c8ff99, inset 0 0 10px #00c8ff66;
+}
+
+/* Glowing Active State */
+input[type="button"]:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px #00f7ff, 0 0 10px #00ffcc;
+}
+
+input[type="button"]:active,
+input.pressed {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px #00f7ff inset;
+}
+
+/* Memory Indicator Glow */
+#indicator.memory-active {
+    color: #00ffe5;
+    font-weight: bold;
+    animation: glowText 1.5s ease-in-out infinite;
+}
+
+@keyframes glowText {
+    0%, 100% { text-shadow: 0 0 10px #00ffe0; }
+    50% { text-shadow: 0 0 20px #00ffe0; }
+}
+
+/* Neon Button Pulse */
+@keyframes neonPulse {
+    from {
+        box-shadow: 0 0 5px #00f7ff, 0 0 15px #00ffe0;
+    }
+    to {
+        box-shadow: 0 0 15px #00f7ff, 0 0 25px #00ffe0;
+    }
+}
+
+/* Theme Switcher Neon Style */
+.theme-switcher {
+    background-color: rgba(0, 0, 30, 0.9);
+    border: 2px solid #00ffe0;
+    border-radius: 12px;
+    padding: 1rem;
+    color: #00ffe0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    box-shadow: 0 0 12px #00f7ff;
+}
+
+.theme-button {
+    background-color: transparent;
+    color: #00ffe0;
+    border: 1px solid #00ffe0;
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-shadow: 0 0 6px #00ffe0;
+}
+
+.theme-button:hover {
+    background-color: #00ffe022;
+    box-shadow: 0 0 12px #00ffe0;
+}
+
+.theme-button.active {
+    background-color: #00ffe0;
+    color: #000;
+    text-shadow: none;
+    font-weight: bold;
+}
