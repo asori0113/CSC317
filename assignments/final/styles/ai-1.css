@@ -1,0 +1,259 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background and body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #f06, #ff9a9e, #ff6a00);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Gradient animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header Styles */
+header {
+    background: #1a1a1a;
+    padding: 30px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transform: skewY(-10deg);
+    z-index: 10;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Contact Information Section */
+#contactinformation {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    animation: fadeInUp 1.5s ease;
+}
+
+footer p {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+/* Navigation Bar */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #00d4ff;
+    transform: translateY(-3px);
+}
+
+/* About Me Section */
+#aboutme {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    animation: fadeIn 1.5s ease;
+}
+
+.aboutmeh3 h3 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.aboutme img {
+    border-radius: 10px;
+    margin-top: 20px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.aboutme img:hover {
+    transform: scale(1.05);
+}
+
+/* ExtraCurricular Section */
+#extracurricular {
+    font-size: 2rem;
+    margin-top: 30px;
+    color: #ff9a9e;
+}
+
+/* Profile Links Section */
+#profilelinks {
+    font-size: 2rem;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.profile-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-links a {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.profile-links a:hover {
+    background-color: #ff6a00;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Education Section */
+#education {
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+th {
+    background-color: #ff6a00;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Projects Section */
+#projects {
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    background-color: #ff6a00;
+    transform: translateY(-5px);
+}
+
+.project-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+form {
+    display: grid;
+    gap: 20px;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+input, button {
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+button {
+    background-color: #ff6a00;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00d4ff;
+}
+
+/* Reference Section */
+#reference {
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+.reference a {
+    color: #ff6a00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.reference a:hover {
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
